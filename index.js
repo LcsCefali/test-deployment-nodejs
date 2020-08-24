@@ -13,6 +13,10 @@ app.get("/test", (req, res) => {
   return res.json({ message: "Test for deploy on Heroku!" });
 });
 
+app.get("/facebook/photos", (req, res) => {
+  return res.json({ message: "Facebok fotos" });
+});
+
 app.listen(process.env.PORT || 3333, () => {
   console.log("Backend started!");
 });
